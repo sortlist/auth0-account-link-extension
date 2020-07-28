@@ -1,7 +1,7 @@
 {
-  "name": "auth0-account-link-extension",
-  "version": "2.5.1",
-  "description": "Auth0 Account Link Extension",
+  "name": "sortlist-account-link-extension",
+  "version": "2.6.0",
+  "description": "Sortlist Account Link Extension",
   "main": "index.js",
   "engines": {
     "node": ">=6.9"
