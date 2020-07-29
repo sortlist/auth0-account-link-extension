@@ -1,6 +1,6 @@
 {
   "name": "sortlist-account-link-extension",
-  "version": "2.7.1",
+  "version": "2.7.2",
   "description": "Sortlist Account Link Extension",
   "main": "index.js",
   "engines": {
@@ -13,13 +13,13 @@
     "lint": "eslint .",
     "serve:dev": "gulp run",
     "client:build": "minify --clean --output dist/assets/link.$npm_package_version.min.css public/css/link.css && minify --clean --output dist/assets/admin.$npm_package_version.min.css public/css/admin.css",
-    "extension:build": "a0-ext build:server ./webtask.js ./dist && cp ./dist/sortlist-account-link.extension.$npm_package_version.js ./build/bundle.js",
+    "extension:build": "a0-ext build:server ./webtask.js ./dist && cp ./dist/sortlist-account-link-extension.extension.$npm_package_version.js ./build/bundle.js",
     "build": "yarn run client:build && yarn run extension:build"
   },
   "author": "Auth0",
   "license": "MIT",
   "auth0-extension": {
-    "bundleModules": true,
+    "bundleModules": false,
     "nodeTarget": "12",
     "useBabel": false,
     "externals": [
